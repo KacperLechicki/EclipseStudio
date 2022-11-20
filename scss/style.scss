@@ -91,7 +91,7 @@ body {
 	}
 
 	&__text {
-		font-size: 1.4rem;
+		font-size: 2.6rem;
 	}
 
 	&__btn {
@@ -109,5 +109,38 @@ body {
 		&::before {
 			background-color: colors.$light-white;
 		}
+	}
+}
+
+// MEDIA
+@media (min-width: 768px) {
+	.side-block {
+		height: 50px;
+		width: 45%;
+	}
+
+	.header {
+		&__head {
+			font-size: 6.6rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+
+	.header {
+		background-image: colors.$blue-gradient, url('../img/header_1920.jpeg');
 	}
 }
