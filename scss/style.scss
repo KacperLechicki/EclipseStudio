@@ -41,8 +41,7 @@ body {
 
 	&:focus {
 		outline: none;
-		// border: 1px solid rgba(255, 255, 255, 0.5);
-		border: 1px solid black;
+		border: 1px solid rgba(255, 255, 255, 0.5);
 		border-radius: 8px;
 	}
 
@@ -85,4 +84,5 @@ body {
 	text-align: center;
 	color: colors.$pure-white;
 	@include mixins.heroIMG('../img/header_640.jpeg');
+	background-attachment: scroll;
 }
