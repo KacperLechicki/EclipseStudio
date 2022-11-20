@@ -1,6 +1,6 @@
-@use 'colors';
-@use 'components';
-@use 'mixins';
+@use './colors' as colors;
+@use './components' as components;
+@use './mixins' as mixins;
 
 *,
 *::before,
@@ -18,4 +18,55 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: 'Roboto', sans-serif;
+}
+
+//NAVIGATION
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+
+    &:hover {
+        .burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
+            width: 100%;
+        }
+    }
+
+	&:focus {
+		outline: none;
+		// border: 1px solid rgba(255, 255, 255, 0.5);
+		border: 1px solid black;
+		border-radius: 8px;
+	}
+
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&__bars,
+	&__bars::before,
+	&__bars::after {
+		@include mixins.burgerBtn;
+	}
+
+	&__bars {
+		width: 100%;
+
+		&::after {
+			top: 13px;
+			width: 60%;
+		}
+
+		&::before {
+			top: 27px;
+			width: 30%;
+		}
+	}
 }
