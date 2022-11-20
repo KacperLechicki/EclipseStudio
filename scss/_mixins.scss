@@ -5,6 +5,13 @@
 	right: 0;
 	height: 3px;
 	content: '';
-	background-color: colors.$main-color;
+	background-color: colors.$pure-white;
 	transition: width 0.3s;
+}
+
+@mixin heroIMG($bgImg) {
+	background-image: colors.$blue-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }

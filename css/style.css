@@ -68,7 +68,9 @@ body {
   cursor: pointer;
   z-index: 1000;
 }
-.burger-btn:hover .burger-btn__bars, .burger-btn:hover .burger-btn__bars::before, .burger-btn:hover .burger-btn__bars::after {
+.burger-btn:hover .burger-btn__bars,
+.burger-btn:hover .burger-btn__bars::before,
+.burger-btn:hover .burger-btn__bars::after {
   width: 100%;
 }
 .burger-btn:focus {
@@ -86,7 +88,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #1755e7;
+  background-color: #fff;
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -99,4 +101,20 @@ body {
 .burger-btn__bars::before {
   top: 27px;
   width: 30%;
+}
+
+.header {
+  position: relative;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/header_640.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }/*# sourceMappingURL=style.css.map */
