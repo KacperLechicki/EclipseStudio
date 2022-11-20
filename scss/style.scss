@@ -1,3 +1,7 @@
+@use 'colors';
+@use 'components';
+@use 'mixins';
+
 *,
 *::before,
 *::after {
@@ -8,4 +12,10 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
 }
