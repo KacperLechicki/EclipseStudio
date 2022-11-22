@@ -10,9 +10,9 @@ $hero-gradient: linear-gradient(
 	rgba(12, 24, 38, 0.8),
 	rgba(10, 19, 29, 0.8)
 );
-$back-gradient: linear-gradient(
+$back-gradient: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
+$back-gradient-alfa: linear-gradient(
 	45deg,
-	rgb(31, 61, 96),
-	rgb(33, 63, 99)
+	rgba(17, 33, 53, 0.99),
+	rgba(12, 25, 38, 0.98)
 );
-

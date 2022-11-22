@@ -112,8 +112,31 @@ body {
   top: 0;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
+  background-image: linear-gradient(45deg, rgba(17, 33, 53, 0.99), rgba(12, 25, 38, 0.98));
   z-index: 100;
+}
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: #e7ecef;
+}
+.nav__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  content: "";
+  background-color: #e7ecef;
+  transition: transform 0.3s;
+}
+.nav__item:hover::before {
+  transform: scaleY(1);
 }
 
 .header {
