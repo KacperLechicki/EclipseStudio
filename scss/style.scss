@@ -18,6 +18,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: 'Roboto', sans-serif;
+	background-image: colors.$back-gradient;
 }
 
 //NAVIGATION
@@ -82,7 +83,7 @@ body {
 	flex-direction: column;
 	height: 75vh;
 	text-align: center;
-	color: colors.$pure-white;
+	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
 	background-attachment: scroll;
 
@@ -98,16 +99,16 @@ body {
 		margin-top: 2em;
 		padding: 0.8em 1.6em;
 		font-size: 1.4rem;
-		background-color: colors.$pure-white;
+		background-color: colors.$main-text;
 		border: none;
 		border-radius: 8px;
-		color: colors.$dark;
+		color: colors.$main-color;
 		text-decoration: none;
 		text-transform: uppercase;
 		cursor: pointer;
 
 		&::before {
-			background-color: colors.$light-white;
+			background-color: colors.$buttons-main-hover;
 		}
 	}
 }
@@ -141,6 +142,6 @@ body {
 	}
 
 	.header {
-		background-image: colors.$blue-gradient, url('../img/header_1920.jpeg');
+		background-image: colors.$hero-gradient, url('../img/header_1920.jpeg');
 	}
 }

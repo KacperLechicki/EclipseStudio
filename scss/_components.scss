@@ -10,7 +10,7 @@
 	position: absolute;
 	height: 40px;
 	width: 60%;
-	background-color: colors.$pure-white;
+	background-image: colors.$back-gradient;
 
 	&-left {
 		bottom: 0;
@@ -21,7 +21,7 @@
 
 .btn--specialAnimation {
 	position: relative;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
 	overflow: hidden;
 	z-index: 0;
 
@@ -42,5 +42,9 @@
 	&:hover::before {
 		transform: scaleX(1);
 		transform-origin: left;
+	}
+
+	&:hover {
+		color: colors.$main-text;
 	}
 }
