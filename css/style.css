@@ -8,7 +8,7 @@
   position: absolute;
   height: 40px;
   width: 60%;
-  background-image: linear-gradient(45deg, rgb(47, 62, 70), rgb(40, 74, 93));
+  background-image: linear-gradient(45deg, #1f3d60, rgb(27, 54, 86));
 }
 .side-block-left {
   bottom: 0;
@@ -39,9 +39,6 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-.btn--specialAnimation:hover {
-  color: #cad2c5;
-}
 
 *,
 *::before,
@@ -59,7 +56,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(45deg, rgb(47, 62, 70), rgb(40, 74, 93));
+  background-image: linear-gradient(45deg, #1f3d60, rgb(27, 54, 86));
 }
 
 .burger-btn {
@@ -92,7 +89,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #cad2c5;
+  background-color: #e7ecef;
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -116,8 +113,8 @@ body {
   flex-direction: column;
   height: 75vh;
   text-align: center;
-  color: #cad2c5;
-  background-image: linear-gradient(45deg, rgba(17, 23, 26, 0.7), rgba(17, 31, 40, 0.65)), url("../img/header_640.jpeg");
+  color: #e7ecef;
+  background-image: linear-gradient(45deg, rgba(12, 24, 38, 0.8), rgba(10, 19, 29, 0.8)), url("../img/header_640.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -133,16 +130,16 @@ body {
   margin-top: 2em;
   padding: 0.8em 1.6em;
   font-size: 1.4rem;
-  background-color: #cad2c5;
+  background-color: #e7ecef;
   border: none;
   border-radius: 8px;
-  color: #2f3e46;
+  color: #274c77;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
 .header__btn::before {
-  background-color: rgba(82, 121, 111, 0.8);
+  background-color: #d0d6d9;
 }
 
 @media (min-width: 768px) {
@@ -166,6 +163,6 @@ body {
     right: 50px;
   }
   .header {
-    background-image: linear-gradient(45deg, rgba(17, 23, 26, 0.7), rgba(17, 31, 40, 0.65)), url("../img/header_1920.jpeg");
+    background-image: linear-gradient(45deg, rgba(12, 24, 38, 0.8), rgba(10, 19, 29, 0.8)), url("../img/header_1920.jpeg");
   }
 }/*# sourceMappingURL=style.css.map */
