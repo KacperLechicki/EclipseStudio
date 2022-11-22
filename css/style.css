@@ -8,7 +8,7 @@
   position: absolute;
   height: 40px;
   width: 60%;
-  background-image: linear-gradient(45deg, #1f3d60, rgb(33, 63, 99));
+  background-image: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
 }
 .side-block-left {
   bottom: 0;
@@ -56,10 +56,10 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(45deg, #1f3d60, rgb(33, 63, 99));
+  background-image: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
 }
 
-nav .burger-btn {
+.burger-btn {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -69,22 +69,22 @@ nav .burger-btn {
   cursor: pointer;
   z-index: 1000;
 }
-nav .burger-btn:hover .burger-btn__bars,
-nav .burger-btn:hover .burger-btn__bars::before,
-nav .burger-btn:hover .burger-btn__bars::after {
+.burger-btn:hover .burger-btn__bars,
+.burger-btn:hover .burger-btn__bars::before,
+.burger-btn:hover .burger-btn__bars::after {
   width: 100%;
 }
-nav .burger-btn:focus {
+.burger-btn:focus {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
-nav .burger-btn__box {
+.burger-btn__box {
   position: relative;
   width: 40px;
   height: 30px;
 }
-nav .burger-btn__bars, nav .burger-btn__bars::before, nav .burger-btn__bars::after {
+.burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
   position: absolute;
   right: 0;
   height: 3px;
@@ -92,16 +92,28 @@ nav .burger-btn__bars, nav .burger-btn__bars::before, nav .burger-btn__bars::aft
   background-color: #e7ecef;
   transition: width 0.3s;
 }
-nav .burger-btn__bars {
+.burger-btn__bars {
   width: 100%;
 }
-nav .burger-btn__bars::after {
+.burger-btn__bars::after {
   top: 13px;
   width: 60%;
 }
-nav .burger-btn__bars::before {
+.burger-btn__bars::before {
   top: 27px;
   width: 30%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
+  z-index: 100;
 }
 
 .header {

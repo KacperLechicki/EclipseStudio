@@ -5,29 +5,14 @@ $pure-white: rgb(255, 255, 255);
 $light-white: rgb(219, 216, 216);
 $buttons-main-hover: #d0d6d9;
 
-$light-blue-gradient: linear-gradient(
-	45deg,
-	rgba(8, 206, 255, 0.75),
-	rgba(8, 24, 255, 0.75)
-);
 $hero-gradient: linear-gradient(
 	45deg,
 	rgba(12, 24, 38, 0.8),
 	rgba(10, 19, 29, 0.8)
 );
-$back-gradient: linear-gradient(45deg, #1f3d60, rgb(33, 63, 99));
-$purple-gradient: linear-gradient(
+$back-gradient: linear-gradient(
 	45deg,
-	rgba(190, 10, 214, 0.75),
-	rgba(68, 0, 255, 0.75)
+	rgb(31, 61, 96),
+	rgb(33, 63, 99)
 );
-$blue-gradient-solid: linear-gradient(
-	45deg,
-	rgb(20, 105, 241),
-	rgb(42, 10, 184)
-);
-$light-blue-gradient-solid: radial-gradient(
-	circle at top right,
-	rgb(0, 78, 255) 0%,
-	rgb(0, 212, 255) 100%
-);
+
