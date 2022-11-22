@@ -36,7 +36,9 @@ body {
 		right: 20px;
 		padding: 1em;
 		background: none;
-		border: 1px solid transparent;
+		border: 1px solid colors.$main-text;
+		border-radius: 15px;
+		background-image: colors.$header-back-alfa;
 		cursor: pointer;
 		z-index: 1000;
 
@@ -173,18 +175,32 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 92vh;
+	height: 90vh;
 	text-align: center;
 	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
 	background-attachment: scroll;
 
+	&__box {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 4em;
+		border: 1px solid colors.$main-text;
+		border-radius: 15px;
+		background-image: colors.$header-back-alfa;
+	}
+
 	&__heading {
 		font-size: 4.8rem;
+		letter-spacing: 1px;
 	}
 
 	&__text {
 		font-size: 2.6rem;
+		letter-spacing: 1px;
 	}
 
 	&__btn {
