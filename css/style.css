@@ -63,7 +63,7 @@ body {
   right: 20px;
   padding: 1em;
   background: none;
-  border: 1px solid #e7ecef;
+  border: 1px solid transparent;
   border-radius: 15px;
   background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.65), rgba(5, 9, 14, 0.8));
   cursor: pointer;
@@ -204,7 +204,7 @@ body {
   height: 95vh;
   text-align: center;
   color: #e7ecef;
-  background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.4), rgba(5, 9, 14, 0.6)), url("../img/header_640.jpeg");
+  background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.4), rgba(5, 9, 14, 0.7)), url("../img/header_640.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -277,7 +277,7 @@ body {
     right: 50px;
   }
   .header {
-    background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.4), rgba(5, 9, 14, 0.6)), url("../img/header_1920.jpeg");
+    background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.4), rgba(5, 9, 14, 0.7)), url("../img/header_1920.jpeg");
   }
   .header__heading {
     font-size: 4.6rem;
