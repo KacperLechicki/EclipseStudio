@@ -11,4 +11,8 @@ $hero-gradient: linear-gradient(
 	rgba(10, 19, 29, 0.8)
 );
 $back-gradient: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
-
+$back-gradient-alfa: linear-gradient(
+	45deg,
+	rgb(31, 61, 96, 0.99),
+	rgba(27, 51, 80, 0.98)
+);
