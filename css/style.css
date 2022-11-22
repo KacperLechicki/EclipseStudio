@@ -1,7 +1,9 @@
 .wrapper {
+  position: relative;
   margin: 0 auto;
   width: 100%;
-  width: 1200px;
+  max-width: 1200px;
+  background-color: gold;
 }
 
 .btn--specialAnimation {
@@ -47,8 +49,16 @@ body {
   background-image: linear-gradient(45deg, rgb(12, 24, 39), rgb(12, 25, 42));
 }
 
-.burger-btn {
+.top-bar {
   position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+}
+.top-bar .burger-btn {
+  position: absolute;
   top: 20px;
   right: 20px;
   padding: 1em;
@@ -57,22 +67,22 @@ body {
   cursor: pointer;
   z-index: 1000;
 }
-.burger-btn:hover .burger-btn__bars,
-.burger-btn:hover .burger-btn__bars::before,
-.burger-btn:hover .burger-btn__bars::after {
+.top-bar .burger-btn:hover .burger-btn__bars,
+.top-bar .burger-btn:hover .burger-btn__bars::before,
+.top-bar .burger-btn:hover .burger-btn__bars::after {
   width: 100%;
 }
-.burger-btn:focus {
+.top-bar .burger-btn:focus {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
-.burger-btn__box {
+.top-bar .burger-btn__box {
   position: relative;
   width: 40px;
   height: 30px;
 }
-.burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
+.top-bar .burger-btn__bars, .top-bar .burger-btn__bars::before, .top-bar .burger-btn__bars::after {
   position: absolute;
   right: 0;
   height: 3px;
@@ -80,16 +90,25 @@ body {
   background-color: #e7ecef;
   transition: width 0.3s;
 }
-.burger-btn__bars {
+.top-bar .burger-btn__bars {
   width: 100%;
 }
-.burger-btn__bars::after {
+.top-bar .burger-btn__bars::after {
   top: 13px;
   width: 60%;
 }
-.burger-btn__bars::before {
+.top-bar .burger-btn__bars::before {
   top: 27px;
   width: 30%;
+}
+.top-bar .logo img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  z-index: 100;
 }
 
 .nav {

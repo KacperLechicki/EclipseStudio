@@ -9,25 +9,34 @@
     <script src="https://kit.fontawesome.com/296f8022ec.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/favicon/Web/icons8-moon-color-32.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <!-- BURGER BUTTON -->
-    <button class="burger-btn">
-        <div class="burger-btn__box">
-            <div class="burger-btn__bars"></div>
-        </div>
-    </button>
+    <div class="top-bar">
+        <div class="wrapper">
+            <!-- BURGER BUTTON -->
+            <button class="burger-btn">
+                <div class="burger-btn__box">
+                    <div class="burger-btn__bars"></div>
+                </div>
+            </button>
 
-    <!-- NAWIGACJA -->
+            <!-- LOGO -->
+            <a href="#" class="logo"><img src="./img/favicon/Web/icons8-moon-color-96.png" alt="Logo firmy eclipse"></a>
+        </div>
+    </div>
+
+    <!-- NAWIGACJA    -->
     <nav class="nav">
         <div class="nav__items">
             <a href="#aboutus" class="nav__item">O nas</a>
-            <a href="#prices" class="nav__item">Cennik</a>
+            <a href="#pricing" class="nav__item">Cennik</a>
             <a href="#reviews" class="nav__item">Opinie</a>
             <a href="#contact" class="nav__item">Kontakt</a>
         </div>
@@ -37,7 +46,7 @@
     <header class="header">
         <h1 class="header__heading">Eclipse Studio</h1>
         <p class="header__text">Studio nagraniowe</p>
-        <a href="#offers" class="header__btn btn--specialAnimation">Poznaj ofertę</a>
+        <a href="#pricing" class="header__btn btn--specialAnimation">Poznaj ofertę</a>
     </header>
 
     <script src="./js/script.js"></script>
