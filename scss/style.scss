@@ -18,7 +18,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: 'Roboto', sans-serif;
-	background-image: colors.$back-gradient;
+	background-image: colors.$back;
 }
 
 // BURGER BUTTON
@@ -82,7 +82,7 @@ body {
 	top: 0;
 	height: 100vh;
 	width: 100%;
-	background-image: colors.$back-gradient-alfa;
+	background-image: colors.$back-alfa;
 	transform: translateX(100%);
 	transition: 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 	z-index: 100;
@@ -140,7 +140,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 75vh;
+	height: 92vh;
 	text-align: center;
 	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
