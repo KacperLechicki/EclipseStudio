@@ -4,18 +4,6 @@
   width: 1200px;
 }
 
-.side-block {
-  position: absolute;
-  height: 40px;
-  width: 60%;
-  background-image: linear-gradient(45deg, rgb(31, 61, 96), rgb(33, 63, 99));
-}
-.side-block-left {
-  bottom: 0;
-  left: -50px;
-  transform: skew(45deg);
-}
-
 .btn--specialAnimation {
   position: relative;
   transition: background-color 0.3s, color 0.3s;
@@ -214,9 +202,6 @@ body {
   .header__btn {
     font-size: 1.2rem;
   }
-  .header .side-block-left {
-    bottom: -1px;
-  }
 }
 @media (min-width: 768px) {
   .side-block {
@@ -254,9 +239,6 @@ body {
   }
   .header__btn {
     font-size: 1.4rem;
-  }
-  .header .side-block-left {
-    bottom: -1px;
   }
 }
 @media (min-width: 1200px) {
