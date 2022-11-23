@@ -71,6 +71,10 @@ body {
   color: #e7ecef;
 }
 
+hr {
+  color: #e7ecef;
+}
+
 .top-bar .burger-btn {
   position: fixed;
   top: 30px;
@@ -79,7 +83,7 @@ body {
   background: none;
   border: 1px solid #e7ecef;
   border-radius: 15px;
-  background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.7), rgba(5, 9, 14, 0.8));
+  background-image: linear-gradient(45deg, rgb(6, 13, 20), rgb(5, 9, 14));
   cursor: pointer;
   z-index: 1000;
 }
@@ -292,6 +296,10 @@ body {
   flex-direction: column;
   margin: 2em 0;
 }
+.aboutus__box--icons {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
 .aboutus__img {
   width: 100%;
   margin-bottom: 1em;
@@ -302,9 +310,50 @@ body {
   margin-bottom: 0.5em;
   color: #366eae;
 }
+.aboutus__title--icons {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #366eae;
+}
 .aboutus__text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 100;
+}
+.aboutus__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.aboutus__icon {
+  margin-top: 1em;
+  width: 33%;
+}
+.aboutus__icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #e7ecef;
+  margin: 0 1em;
+}
+.aboutus__icon a i {
+  color: #e7ecef;
+  margin-bottom: 0.5em;
+  font-size: 5rem;
+  transition: color 0.3s;
+}
+.aboutus__icon a p {
+  font-size: 2.4rem;
+  transition: color 0.3s;
+}
+.aboutus__icon:hover i, .aboutus__icon:hover p {
+  color: #8db1db;
 }
 
 @media (min-width: 320px) {
@@ -337,6 +386,15 @@ body {
   }
   .nav__item {
     font-size: 2.4rem;
+  }
+  .aboutus__icon a i {
+    font-size: 4rem;
+  }
+  .aboutus__icon a p {
+    font-size: 0.8rem;
+  }
+  .aboutus__title--icons {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 375px) {
@@ -435,6 +493,12 @@ body {
   .aboutus__text {
     font-size: 1.8rem;
   }
+  .aboutus__icon a i {
+    font-size: 5rem;
+  }
+  .aboutus__icon a p {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -516,6 +580,15 @@ body {
   .nav__item {
     font-size: 3rem;
   }
+  .aboutus__icon a i {
+    font-size: 5.4rem;
+  }
+  .aboutus__icon a p {
+    font-size: 2.8rem;
+  }
+  .aboutus__title--icons {
+    font-size: 2.8rem;
+  }
 }
 @media (min-width: 1200px) {
   .header__heading {
@@ -568,5 +641,11 @@ body {
   }
   .nav__item {
     font-size: 3rem;
+  }
+  .aboutus__icon a i {
+    font-size: 5rem;
+  }
+  .aboutus__icon a p {
+    font-size: 2.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
