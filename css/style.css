@@ -255,6 +255,8 @@ body {
   height: 180px;
 }
 .header__circleBox--circle {
+  position: absolute;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,6 +397,55 @@ body {
   }
   .header__heading {
     font-size: 4.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header__heading {
+    font-size: 4.6rem;
+  }
+  .header__text {
+    font-size: 3rem;
+  }
+  .header__btn {
+    font-size: 2rem;
+  }
+  .header__box {
+    position: relative;
+    bottom: 1em;
+    padding: 3em 5em;
+  }
+  .header__circleBox--circle--smaller {
+    height: 100px;
+    width: 100px;
+  }
+  .header__circleBox--circle--smaller .fa-circle-down {
+    font-size: 6rem;
+    color: #e7ecef;
+  }
+  .top-bar .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .top-bar .burger-btn__box {
+    width: 70px;
+    height: 60px;
+  }
+  .top-bar .burger-btn__bars::after {
+    top: 26px;
+    width: 60%;
+  }
+  .top-bar .burger-btn__bars::before {
+    top: 54px;
+    width: 30%;
+  }
+  .top-bar .logo img {
+    top: 50px;
+    left: 50px;
+    height: 90px;
+    width: 90px;
+  }
+  .nav__item {
+    font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {

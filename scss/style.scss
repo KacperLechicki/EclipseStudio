@@ -232,10 +232,12 @@ body {
 		height: 180px;
 
 		&--circle {
+			position: absolute;
+			bottom: 30px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			
+
 			&--smaller {
 				display: flex;
 				justify-content: center;
@@ -424,6 +426,81 @@ body {
 
 		&__heading {
 			font-size: 4.6rem;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.header {
+		&__heading {
+			font-size: 4.6rem;
+		}
+
+		&__text {
+			font-size: 3rem;
+		}
+
+		&__btn {
+			font-size: 2rem;
+		}
+
+		&__box {
+			position: relative;
+			bottom: 1em;
+			padding: 3em 5em;
+		}
+
+		&__circleBox {
+			&--circle {
+				&--smaller {
+					height: 100px;
+					width: 100px;
+
+					.fa-circle-down {
+						font-size: 6rem;
+						color: colors.$main-text;
+					}
+				}
+			}
+		}
+	}
+
+	.top-bar {
+		.burger-btn {
+			top: 50px;
+			right: 50px;
+
+			&__box {
+				width: 70px;
+				height: 60px;
+			}
+
+			&__bars {
+				&::after {
+					top: 26px;
+					width: 60%;
+				}
+
+				&::before {
+					top: 54px;
+					width: 30%;
+				}
+			}
+		}
+
+		.logo {
+			img {
+				top: 50px;
+				left: 50px;
+				height: 90px;
+				width: 90px;
+			}
+		}
+	}
+
+	.nav {
+		&__item {
+			font-size: 3rem;
 		}
 	}
 }
