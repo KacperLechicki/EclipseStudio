@@ -144,7 +144,7 @@ body {
   position: relative;
   display: block;
   margin: 0.5em 0;
-  padding: 0.5em 2em;
+  padding: 0.7em 2em;
   font-size: 2.8rem;
   text-decoration: none;
   color: #e7ecef;
@@ -162,6 +162,18 @@ body {
 }
 .nav__item:hover::before {
   transform: scaleY(1);
+}
+.nav__line {
+  padding: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e7ecef;
+}
+.nav__line--up {
+  margin-bottom: 2em;
+}
+.nav__line--down {
+  margin-top: 2em;
 }
 
 @-webkit-keyframes navItemsAnimation {
@@ -358,6 +370,9 @@ body {
     top: 50px;
     left: 50px;
   }
+  .nav__item {
+    font-size: 3.6rem;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -388,5 +403,22 @@ body {
   }
   .header__box {
     font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header__heading {
+    font-size: 4.6rem;
+  }
+  .header__text {
+    font-size: 2rem;
+  }
+  .header__btn {
+    font-size: 1.4rem;
+  }
+  .header__box {
+    font-size: 1.2rem;
+  }
+  .nav__item {
+    font-size: 2.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
