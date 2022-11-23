@@ -83,8 +83,11 @@ body {
 			height: 60px;
 			width: 60px;
 			border-radius: 50%;
-			animation: rotation 10s linear infinite;
 			z-index: 100;
+		}
+
+		img:hover {
+			animation: rotation 6s linear infinite;
 		}
 	}
 }
@@ -255,11 +258,21 @@ body {
 				.fa-circle-down {
 					font-size: 5rem;
 					color: colors.$main-text;
+					transition: color .3s linear;
+				}
+
+				.fa-circle-down:hover {
+					color: colors.$buttons-main-hover;
 				}
 			}
 		}
 	}
 }
+
+
+
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 
 // MEDIA
 @media (min-width: 320px) {

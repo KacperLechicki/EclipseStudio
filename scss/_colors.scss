@@ -1,8 +1,6 @@
 $main-color: #274c77;
 $main-text: #e7ecef;
-$secondary-color: #354f52;
 $pure-white: rgb(255, 255, 255);
-$light-white: rgb(219, 216, 216);
 $buttons-main-hover: #d0d6d9;
 
 $hero-gradient: linear-gradient(
@@ -10,12 +8,15 @@ $hero-gradient: linear-gradient(
 	rgba(6, 13, 20, 0.4),
 	rgba(5, 9, 14, 0.7)
 );
+
 $back: linear-gradient(45deg, rgb(7, 14, 23), rgb(6, 13, 22));
+
 $back-alfa: linear-gradient(
 	45deg,
 	rgba(7, 14, 23, 0.98),
 	rgba(6, 13, 22, 0.96)
 );
+
 $header-back-alfa: linear-gradient(
 	45deg,
 	rgba(6, 13, 20, 0.7),

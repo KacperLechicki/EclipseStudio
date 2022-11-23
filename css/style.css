@@ -100,9 +100,11 @@ body {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  -webkit-animation: rotation 10s linear infinite;
-          animation: rotation 10s linear infinite;
   z-index: 100;
+}
+.top-bar .logo img:hover {
+  -webkit-animation: rotation 6s linear infinite;
+          animation: rotation 6s linear infinite;
 }
 
 @-webkit-keyframes rotation {
@@ -274,6 +276,10 @@ body {
 .header__circleBox--circle--smaller .fa-circle-down {
   font-size: 5rem;
   color: #e7ecef;
+  transition: color 0.3s linear;
+}
+.header__circleBox--circle--smaller .fa-circle-down:hover {
+  color: #d0d6d9;
 }
 
 @media (min-width: 320px) {
