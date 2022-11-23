@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'colors' as colors;
 
 .wrapper {
 	position: relative;
@@ -6,6 +6,19 @@
 	width: 100%;
 	max-width: 1200px;
 	background-color: gold;
+}
+
+.side-block {
+	position: absolute;
+	height: 30px;
+	width: 50%;
+	background-image: colors.$back;
+
+	&-left {
+		bottom: 0;
+		left: -50px;
+		transform: skew(45deg);
+	}
 }
 
 .btn--specialAnimation {

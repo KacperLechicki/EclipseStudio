@@ -87,16 +87,12 @@ body {
 		}
 
 		img:hover {
-			animation: rotation 6s linear infinite;
+			animation: rotation 4s linear 0s infinite;
 		}
 	}
 }
 
 @keyframes rotation {
-	from {
-		transform: rotate(0);
-	}
-
 	to {
 		transform: rotate(360deg);
 	}
@@ -188,6 +184,7 @@ body {
 	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
 	background-attachment: scroll;
+	z-index: 5;
 	// overflow: hidden;
 
 	&__box {
@@ -258,7 +255,7 @@ body {
 				.fa-circle-down {
 					font-size: 5rem;
 					color: colors.$main-text;
-					transition: color .3s linear;
+					transition: color 0.3s linear;
 				}
 
 				.fa-circle-down:hover {
@@ -268,8 +265,6 @@ body {
 		}
 	}
 }
-
-
 
 //////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////

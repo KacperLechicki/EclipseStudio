@@ -6,6 +6,18 @@
   background-color: gold;
 }
 
+.side-block {
+  position: absolute;
+  height: 30px;
+  width: 50%;
+  background-image: linear-gradient(45deg, rgb(7, 14, 23), rgb(6, 13, 22));
+}
+.side-block-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+
 .btn--specialAnimation {
   position: relative;
   transition: background-color 0.3s, color 0.3s;
@@ -103,23 +115,17 @@ body {
   z-index: 100;
 }
 .top-bar .logo img:hover {
-  -webkit-animation: rotation 6s linear infinite;
-          animation: rotation 6s linear infinite;
+  -webkit-animation: rotation 4s linear 0s infinite;
+          animation: rotation 4s linear 0s infinite;
 }
 
 @-webkit-keyframes rotation {
-  from {
-    transform: rotate(0);
-  }
   to {
     transform: rotate(360deg);
   }
 }
 
 @keyframes rotation {
-  from {
-    transform: rotate(0);
-  }
   to {
     transform: rotate(360deg);
   }
@@ -212,6 +218,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: scroll;
+  z-index: 5;
 }
 .header__box {
   position: absolute;
