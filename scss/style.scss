@@ -22,18 +22,11 @@ body {
 }
 
 .top-bar {
-	position: fixed;
-	top: 0;
-	display: flex;
-	align-items: center;
-	width: 100%;
-	z-index: 1000;
-
 	// BURGER BUTTON
 	.burger-btn {
 		position: absolute;
-		top: 20px;
-		right: 20px;
+		top: 30px;
+		right: 30px;
 		padding: 1em;
 		background: none;
 		border: 1px solid transparent;
@@ -87,8 +80,8 @@ body {
 	.logo {
 		img {
 			position: absolute;
-			top: 20px;
-			left: 20px;
+			top: 30px;
+			left: 30px;
 			height: 60px;
 			width: 60px;
 			border-radius: 50%;
@@ -170,7 +163,6 @@ body {
 // HEADER
 .header {
 	position: relative;
-	padding: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -180,6 +172,7 @@ body {
 	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
 	background-attachment: scroll;
+	// overflow: hidden;
 
 	&__box {
 		position: absolute;
@@ -187,7 +180,8 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 4em;
+		margin-bottom: 3em;
+		padding: 3em;
 		border: 1px solid colors.$main-text;
 		border-radius: 15px;
 		background-image: colors.$header-back-alfa;
@@ -219,21 +213,107 @@ body {
 			background-color: colors.$buttons-main-hover;
 		}
 	}
+
+	&__circleBox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 0.3em;
+		margin: 0 5em;
+		width: 180px;
+		height: 180px;
+
+		&--circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 120px;
+			width: 120px;
+			border: 0.5px solid colors.$main-text;
+			border-radius: 50%;
+			box-shadow: 1px 1px 2px colors.$main-text;
+
+			&--smaller {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 90px;
+				width: 90px;
+				border: 0.5px solid colors.$main-text;
+				border-radius: 50%;
+
+				.fa-circle-down {
+					font-size: 5rem;
+					color: colors.$main-text;
+				}
+			}
+		}
+	}
 }
 
 // MEDIA
 @media (min-width: 320px) {
 	.header {
+		height: 100vh;
+
 		&__heading {
-			font-size: 3.6rem;
+			font-size: 2.4rem;
 		}
 
 		&__text {
-			font-size: 2.4rem;
+			font-size: 1.6rem;
 		}
 
 		&__btn {
 			font-size: 1.2rem;
+		}
+
+		&__box {
+			padding: 2em;
+			margin: 2em;
+		}
+
+		&__circleBox {
+			&--circle {
+				height: 100px;
+				width: 100px;
+
+				&--smaller {
+					height: 70px;
+					width: 70px;
+
+					.fa-circle-down {
+						font-size: 4rem;
+						color: colors.$main-text;
+					}
+				}
+			}
+		}
+	}
+
+	.nav {
+		&__item {
+			font-size: 2.4rem;
+		}
+	}
+}
+
+@media (min-width: 375px) {
+	.header {
+		height: 100vh;
+
+		&__heading {
+			font-size: 2.8rem;
+		}
+
+		&__btn {
+			font-size: 1.4rem;
+		}
+
+		&__box {
+			padding: 2.5em;
+			margin: 2.5em;
 		}
 	}
 }
@@ -245,27 +325,69 @@ body {
 	}
 
 	.header {
+		height: 100vh;
 		&__heading {
-			font-size: 5rem;
+			font-size: 3.6rem;
 		}
 
 		&__text {
-			font-size: 2.4rem;
+			font-size: 2rem;
 		}
 
 		&__btn {
-			font-size: 1.4rem;
+			font-size: 1.8rem;
+		}
+
+		&__box {
+			padding: 3.6em;
+		}
+
+		&__circleBox {
+			&--circle {
+				height: 120px;
+				width: 120px;
+
+				&--smaller {
+					height: 90px;
+					width: 90px;
+
+					.fa-circle-down {
+						font-size: 5rem;
+						color: colors.$main-text;
+					}
+				}
+			}
+		}
+	}
+
+	.top-bar {
+		.burger-btn {
+			top: 50px;
+			right: 50px;
+		}
+
+		.logo {
+			img {
+				top: 50px;
+				left: 50px;
+			}
 		}
 	}
 }
 
 @media (min-width: 992px) {
 	.burger-btn {
-		top: 50px;
-		right: 50px;
+		top: 60px;
+		right: 60px;
+	}
+
+	.logo {
+		top: 60px;
+		right: 60px;
 	}
 
 	.header {
+		height: 95vh;
 		background-image: colors.$hero-gradient, url('../img/header_1920.jpeg');
 
 		&__heading {
@@ -285,22 +407,12 @@ body {
 		}
 
 		&__btn {
-			font-size: 1.4rem;
+			font-size: 2rem;
+		}
+
+		&__box {
+			font-size: 1.6rem;
 		}
 	}
 }
-@media (min-width: 1200px) {
-	.header {
-		&__heading {
-			font-size: 5rem;
-		}
 
-		&__text {
-			font-size: 2.4rem;
-		}
-
-		&__btn {
-			font-size: 1.4rem;
-		}
-	}
-}
