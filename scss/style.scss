@@ -83,18 +83,14 @@ body {
 			height: 60px;
 			width: 60px;
 			border-radius: 50%;
+			transform: rotate(0);
+			transition: transform 5s linear;
 			z-index: 100;
 		}
 
 		img:hover {
-			animation: rotation 4s linear 0s infinite;
+			transform: rotate(360deg);
 		}
-	}
-}
-
-@keyframes rotation {
-	to {
-		transform: rotate(360deg);
 	}
 }
 
@@ -368,6 +364,10 @@ body {
 					}
 				}
 			}
+		}
+
+		.side-block {
+			display: block;
 		}
 	}
 
