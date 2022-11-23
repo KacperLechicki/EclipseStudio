@@ -288,7 +288,7 @@ hr {
   transition: color 0.3s linear;
 }
 .header__circleBox--circle--smaller .fa-circle-down:hover {
-  color: #d0d6d9;
+  color: rgb(25, 86, 138);
 }
 
 .aboutus__box {
