@@ -423,7 +423,7 @@ hr {
   padding: 2em;
   border: 1px solid #e7ecef;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.498), inset 1px 1px 2px #e7ecef;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -451,6 +451,91 @@ hr {
 .reviews__box-text {
   margin-bottom: 1em;
   font-size: 1.4rem;
+}
+
+.contact {
+  position: relative;
+  background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.4), rgba(5, 9, 14, 0.7));
+  overflow: hidden;
+}
+.contact__form, .contact__form-top {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.6rem;
+}
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+.contact__form-btn {
+  align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: rgb(12, 23, 41);
+  border: none;
+  border-radius: 15px;
+  background-color: #e7ecef;
+  cursor: pointer;
+}
+.contact__form-btn::before {
+  background-color: #d0d6d9;
+}
+
+.footer {
+  color: #e7ecef;
+  background-color: linear-gradient(45deg, rgb(12, 24, 39), rgb(12, 23, 41));
+}
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+.footer__box {
+  font-size: 1.4rem;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.footer__box-social {
+  margin: 2em 0 1em;
+}
+.footer__box-link {
+  padding: 0 0.3em;
+  font-size: 3.6rem;
+  color: #e7ecef;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+.footer__box-link:hover {
+  color: #8db1db;
+}
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
 }
 
 @media (min-width: 320px) {
@@ -614,6 +699,32 @@ hr {
   }
   .aboutus__icon a p {
     font-size: 1.6rem;
+  }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer_box {
+    margin: 0 2em;
+    width: 25%;
+  }
+  .footer_box:first-child {
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 2.4rem;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    text-decoration: none;
   }
 }
 @media (min-width: 992px) {
