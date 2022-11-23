@@ -3,20 +3,6 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  background-color: gold;
-}
-
-.side-block {
-  display: none;
-  position: absolute;
-  height: 30px;
-  width: 50%;
-  background-image: linear-gradient(45deg, rgb(7, 14, 23), rgb(6, 13, 22));
-}
-.side-block-left {
-  bottom: 0;
-  left: -50px;
-  transform: skew(45deg);
 }
 
 .btn--specialAnimation {
@@ -43,6 +29,27 @@
   transform-origin: left;
 }
 
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+}
 *,
 *::before,
 *::after {
@@ -59,11 +66,12 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(45deg, rgb(7, 14, 23), rgb(6, 13, 22));
+  background-image: linear-gradient(45deg, rgb(12, 24, 39), rgb(12, 23, 41));
+  color: #e7ecef;
 }
 
 .top-bar .burger-btn {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
   padding: 1em;
@@ -107,7 +115,7 @@ body {
   width: 30%;
 }
 .top-bar .logo img {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 30px;
   height: 60px;
@@ -278,6 +286,24 @@ body {
   color: #d0d6d9;
 }
 
+.aboutus__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.aboutus__img {
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #e7ecef;
+  border-radius: 15px;
+}
+.aboutus__title {
+  margin-bottom: 0.5em;
+}
+.aboutus__text {
+  font-size: 1.4rem;
+}
+
 @media (min-width: 320px) {
   .header {
     height: 100vh;
@@ -323,6 +349,28 @@ body {
   .header__box {
     padding: 2em 2.5em;
     margin: 2.5em;
+  }
+}
+@media (min-width: 576px) {
+  .aboutus__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .aboutus__box-text {
+    width: 55%;
+  }
+  .aboutus__box-text--right {
+    text-align: right;
+  }
+  .aboutus__box-img {
+    width: 40%;
+  }
+  .aboutus__box-img--right {
+    order: 1;
+  }
+  .aboutus__img {
+    margin-bottom: 0;
+    max-height: 300px;
   }
 }
 @media (min-width: 768px) {
@@ -381,6 +429,9 @@ body {
   .nav__item {
     font-size: 3.6rem;
   }
+  .aboutus__text {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -397,6 +448,21 @@ body {
   }
   .header__heading {
     font-size: 4.6rem;
+  }
+  .aboutus__box {
+    margin: 5em 0;
+  }
+  .aboutus__box--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .aboutus__title {
+    font-size: 3.6rem;
+  }
+  .aboutus__text {
+    font-size: 2.2rem;
   }
 }
 @media (min-width: 1024px) {
