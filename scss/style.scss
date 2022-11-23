@@ -24,6 +24,7 @@ body {
 
 hr {
 	color: colors.$main-text;
+	margin-bottom: 70px;
 }
 
 .top-bar {
@@ -180,7 +181,7 @@ hr {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 95vh;
+	height: 100vh;
 	text-align: center;
 	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
@@ -216,7 +217,7 @@ hr {
 		font-size: 1.4rem;
 		background-color: colors.$main-text;
 		border: none;
-		border-radius: 8px;
+		border-radius: 15px;
 		color: colors.$main-color-dark;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -346,14 +347,122 @@ hr {
 	}
 }
 
+//PRICING
+.pricing {
+	position: relative;
+	@include mixins.heroIMG('../img/dj_1920.jpeg');
+	overflow: hidden;
+
+	.section-heading {
+		color: colors.$main-color-light;
+	}
+
+	&__option {
+		margin: 1em 0;
+		box-shadow: 5px 5px 10px #2e2e2e2e;
+		background-image: colors.$back;
+		border: 1px solid colors.$main-text;
+		border-radius: 15px;
+		overflow: hidden;
+
+		&-img {
+			width: 100%;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		&-info {
+			padding: 2em;
+			background-image: colors.$back;
+			z-index: 10;
+		}
+
+		&-heading {
+			margin-bottom: 0.5em;
+			font-size: 2.4rem;
+			font-weight: bold;
+		}
+
+		&-text {
+			margin-bottom: 0.5em;
+			font-size: 1.3rem;
+			color: colors.$main-text;
+		}
+
+		&-btn {
+			margin-top: 1em;
+			padding: 0.8em;
+			width: 100%;
+			color: colors.$main-color-dark;
+			background-color: colors.$main-color-mid;
+			border-radius: 15px;
+			border: none;
+			cursor: pointer;
+
+			&::before {
+				background-color: colors.$main-color-mid-hover;
+			}
+		}
+	}
+}
+//REVIEWS
+@media (max-width: 767px) {
+	.reviews.section-padding {
+		padding: 6em 0;
+	}
+}
+
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		border: 1px solid colors.$main-text;
+		border-radius: 15px;
+		box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+		cursor: pointer;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+
+	&__box-img {
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	&__box-quote {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: colors.$main-color-mid;
+	}
+
+	&__box-text {
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+	}
+}
+
 //////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
 
 // MEDIA
 @media (min-width: 320px) {
 	.header {
-		height: 100vh;
-
 		&__heading {
 			font-size: 2.4rem;
 		}
@@ -417,8 +526,6 @@ hr {
 
 @media (min-width: 375px) {
 	.header {
-		height: 100vh;
-
 		&__heading {
 			font-size: 2.8rem;
 		}
@@ -462,11 +569,46 @@ hr {
 			max-height: 300px;
 		}
 	}
+
+	.pricing {
+		&__option {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+
+			&-img {
+				margin: 0;
+				max-width: 50%;
+				height: auto;
+				object-fit: cover;
+
+				&--right {
+					order: 1;
+					justify-self: flex-end;
+					// margin-left: 5em;
+				}
+			}
+
+			&-info {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			&-heading {
+				margin-bottom: 0.5em;
+				font-size: 3.6rem;
+			}
+
+			&-btn {
+				padding: 1em;
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
 	.header {
-		height: 100vh;
 		&__heading {
 			font-size: 3.6rem;
 		}
@@ -575,7 +717,6 @@ hr {
 	}
 
 	.header {
-		height: 95vh;
 		background-image: colors.$hero-gradient, url('../img/header_1920.jpeg');
 
 		&__heading {
@@ -601,6 +742,20 @@ hr {
 
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.pricing {
+		&__option {
+			&-img {
+				max-width: 50%;
+				height: auto;
+				object-fit: cover;
+			}
+
+			&-text {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
@@ -646,18 +801,18 @@ hr {
 			right: 50px;
 
 			&__box {
-				width: 70px;
-				height: 60px;
+				width: 60px;
+				height: 50px;
 			}
 
 			&__bars {
 				&::after {
-					top: 26px;
+					top: 22px;
 					width: 60%;
 				}
 
 				&::before {
-					top: 54px;
+					top: 45px;
 					width: 30%;
 				}
 			}
@@ -667,8 +822,8 @@ hr {
 			img {
 				top: 50px;
 				left: 50px;
-				height: 90px;
-				width: 90px;
+				height: 80px;
+				width: 80px;
 			}
 		}
 	}
@@ -698,12 +853,22 @@ hr {
 			}
 		}
 	}
+
+	.pricing {
+		&__option {
+			&-img {
+				max-width: 50%;
+				height: auto;
+				object-fit: cover;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
 	.header {
 		&__heading {
-			font-size: 3.6rem;
+			font-size: 4rem;
 		}
 
 		&__text {
@@ -717,7 +882,7 @@ hr {
 		&__box {
 			position: relative;
 			bottom: 1em;
-			padding: 3em 5em;
+			padding: 5em 7em;
 		}
 
 		&__circleBox {
