@@ -356,7 +356,7 @@ hr {
 //PRICING
 .pricing {
 	position: relative;
-	@include mixins.heroIMG('../img/dj_1920.jpeg');
+	@include mixins.heroIMG('../img/dj_640.jpeg');
 	overflow: hidden;
 
 	.section-heading {
@@ -514,7 +514,7 @@ hr {
 //FOOTER
 .footer {
 	color: colors.$main-text;
-	background-color: colors.$back;
+	background-image: colors.$back;
 
 	.wrapper {
 		padding: 6em 2em 2em;
@@ -897,6 +897,7 @@ hr {
 	}
 
 	.pricing {
+		background-image: colors.$hero-gradient, url('../img/dj_1920.jpeg');
 		&__option {
 			&-img {
 				max-width: 50%;
