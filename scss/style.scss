@@ -23,8 +23,8 @@ body {
 }
 
 hr {
-	color: colors.$main-text;
 	margin-bottom: 60px;
+	color: colors.$main-text;
 }
 
 .heartbeat {
@@ -186,7 +186,7 @@ hr {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 100vh;
+	height: 95vh;
 	text-align: center;
 	color: colors.$main-text;
 	@include mixins.heroIMG('../img/header_640.jpeg');
@@ -381,6 +381,7 @@ hr {
 		}
 
 		&-info {
+			width: 50%;
 			padding: 2em;
 			background-image: colors.$back;
 			z-index: 10;

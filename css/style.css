@@ -72,8 +72,8 @@ body {
 }
 
 hr {
-  color: #e7ecef;
   margin-bottom: 60px;
+  color: #e7ecef;
 }
 
 .heartbeat {
@@ -220,7 +220,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   text-align: center;
   color: #e7ecef;
   background-image: linear-gradient(45deg, rgba(6, 13, 20, 0.4), rgba(5, 9, 14, 0.7)), url("../img/header_640.jpeg");
@@ -390,6 +390,7 @@ hr {
   transform: scale(1.1);
 }
 .pricing__option-info {
+  width: 50%;
   padding: 2em;
   background-image: linear-gradient(45deg, rgb(12, 24, 39), rgb(12, 23, 41));
   z-index: 10;
