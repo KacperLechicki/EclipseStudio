@@ -381,7 +381,7 @@ hr {
 		}
 
 		&-info {
-			width: 50%;
+			width: 100%;
 			padding: 2em;
 			background-image: colors.$back;
 			z-index: 10;
@@ -497,8 +497,8 @@ hr {
 	&__form-btn {
 		align-self: flex-end;
 		padding: 1em;
-		width: 100%;
-		max-width: 300px;
+		width: 80%;
+		max-width: 200px;
 		color: colors.$main-color-dark;
 		border: none;
 		border-radius: 15px;
